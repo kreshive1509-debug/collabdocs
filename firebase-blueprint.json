@@ -1,0 +1,206 @@
+{
+  "entities": {
+    "user": {
+      "title": "User Profile",
+      "description": "User account and SaaS plan metadata",
+      "type": "object",
+      "properties": {
+        "email": { "type": "string", "format": "email" },
+        "displayName": { "type": "string" },
+        "photoURL": { "type": "string" },
+        "plan": { "type": "string", "enum": ["free", "pro_monthly", "pro_yearly", "premium"] },
+        "planStatus": { "type": "string", "enum": ["active", "canceled", "expired", "pending"] },
+        "subscriptionId": { "type": "string" },
+        "renewalDate": { "type": "string", "format": "date-time" },
+        "billingStatus": { "type": "string", "enum": ["paid", "unpaid", "overdue"] },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["email", "displayName", "plan", "createdAt"]
+    },
+    "workspace": {
+      "title": "Workspace",
+      "description": "Collaborative workspace container",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "avatar": { "type": "string" },
+        "ownerId": { "type": "string" },
+        "members": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "userId": { "type": "string" },
+              "email": { "type": "string" },
+              "role": { "type": "string", "enum": ["owner", "editor", "viewer"] }
+            }
+          }
+        }
+      },
+      "required": ["name", "ownerId", "members"]
+    },
+    "folder": {
+      "title": "Folder",
+      "description": "Organizational folder within a workspace",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "workspaceId": { "type": "string" },
+        "parentId": { "type": "string" }
+      },
+      "required": ["name", "workspaceId"]
+    },
+    "document": {
+      "title": "Document",
+      "description": "Collaborative text document",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "content": { "type": "string" },
+        "workspaceId": { "type": "string" },
+        "folderId": { "type": "string" },
+        "isStarred": { "type": "boolean" },
+        "isArchived": { "type": "boolean" },
+        "ownerId": { "type": "string" },
+        "collaborators": { "type": "array", "items": { "type": "string" } },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["title", "workspaceId", "ownerId", "createdAt", "updatedAt"]
+    },
+    "comment": {
+      "title": "Comment",
+      "description": "Document discussion comment",
+      "type": "object",
+      "properties": {
+        "docId": { "type": "string" },
+        "author": { "type": "string" },
+        "authorPhoto": { "type": "string" },
+        "text": { "type": "string" },
+        "parentId": { "type": "string" },
+        "isResolved": { "type": "boolean" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["docId", "author", "text", "createdAt"]
+    },
+    "notification": {
+      "title": "Notification",
+      "description": "In-app user notification",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "isRead": { "type": "boolean" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "title", "description", "isRead", "createdAt"]
+    },
+    "activity": {
+      "title": "Activity",
+      "description": "Workspace activity log entry",
+      "type": "object",
+      "properties": {
+        "docId": { "type": "string" },
+        "workspaceId": { "type": "string" },
+        "userId": { "type": "string" },
+        "userName": { "type": "string" },
+        "type": { "type": "string" },
+        "details": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["workspaceId", "userId", "userName", "type", "createdAt"]
+    },
+    "version": {
+      "title": "Version History",
+      "description": "Document version snapshot",
+      "type": "object",
+      "properties": {
+        "docId": { "type": "string" },
+        "title": { "type": "string" },
+        "content": { "type": "string" },
+        "updatedBy": { "type": "string" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["docId", "title", "content", "updatedBy", "updatedAt"]
+    },
+    "subscription": {
+      "title": "Subscription",
+      "description": "User subscription plan details",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "plan": { "type": "string", "enum": ["pro_monthly", "pro_yearly"] },
+        "status": { "type": "string", "enum": ["active", "canceled", "expired", "pending"] },
+        "razorpaySubscriptionId": { "type": "string" },
+        "renewalDate": { "type": "string", "format": "date-time" },
+        "billingStatus": { "type": "string", "enum": ["paid", "unpaid", "overdue"] },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "plan", "status", "razorpaySubscriptionId", "renewalDate", "billingStatus", "createdAt"]
+    },
+    "payment": {
+      "title": "Payment",
+      "description": "User payment record",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "amount": { "type": "number" },
+        "currency": { "type": "string" },
+        "status": { "type": "string", "enum": ["success", "failed", "pending"] },
+        "razorpayOrderId": { "type": "string" },
+        "razorpayPaymentId": { "type": "string" },
+        "razorpaySignature": { "type": "string" },
+        "plan": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "amount", "currency", "status", "razorpayOrderId", "plan", "createdAt"]
+    },
+    "invoice": {
+      "title": "Invoice",
+      "description": "Billing invoice",
+      "type": "object",
+      "properties": {
+        "invoiceNo": { "type": "string" },
+        "userId": { "type": "string" },
+        "userName": { "type": "string" },
+        "userEmail": { "type": "string" },
+        "plan": { "type": "string" },
+        "amount": { "type": "number" },
+        "status": { "type": "string", "enum": ["paid", "unpaid"] },
+        "dueDate": { "type": "string", "format": "date-time" },
+        "paidAt": { "type": "string", "format": "date-time" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["invoiceNo", "userId", "userName", "userEmail", "plan", "amount", "status", "dueDate", "createdAt"]
+    },
+    "transaction": {
+      "title": "Transaction",
+      "description": "Financial transaction log",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "type": { "type": "string" },
+        "amount": { "type": "number" },
+        "status": { "type": "string", "enum": ["success", "failed"] },
+        "details": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "type", "amount", "status", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": { "schema": "user", "description": "User profiles" },
+    "/workspaces/{workspaceId}": { "schema": "workspace", "description": "Workspaces" },
+    "/workspaces/{workspaceId}/folders/{folderId}": { "schema": "folder", "description": "Folders in workspace" },
+    "/workspaces/{workspaceId}/documents/{docId}": { "schema": "document", "description": "Documents in workspace" },
+    "/workspaces/{workspaceId}/documents/{docId}/comments/{commentId}": { "schema": "comment", "description": "Comments in document" },
+    "/workspaces/{workspaceId}/documents/{docId}/versions/{versionId}": { "schema": "version", "description": "Document versions" },
+    "/users/{userId}/notifications/{notificationId}": { "schema": "notification", "description": "User notifications" },
+    "/workspaces/{workspaceId}/activities/{activityId}": { "schema": "activity", "description": "Workspace activities" },
+    "/users/{userId}/subscriptions/{subscriptionId}": { "schema": "subscription", "description": "User subscriptions" },
+    "/users/{userId}/payments/{paymentId}": { "schema": "payment", "description": "User payments" },
+    "/users/{userId}/invoices/{invoiceId}": { "schema": "invoice", "description": "User invoices" },
+    "/users/{userId}/transactions/{transactionId}": { "schema": "transaction", "description": "User transactions" }
+  }
+}

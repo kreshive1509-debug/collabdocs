@@ -1,0 +1,6 @@
+{
+  "name": "CollabDocs",
+  "description": "A premium, real-time collaborative document editor and workspace built for high-performance teams.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

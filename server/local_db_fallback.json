@@ -1,0 +1,274 @@
+{
+  "users": {
+    "d0iA8lci9nPFTxumlSx9aHMrZuz1": {
+      "emailVerified": true,
+      "plan": "free",
+      "planStatus": "active",
+      "subscriptionId": null,
+      "renewalDate": null,
+      "billingStatus": "unpaid",
+      "role": "user",
+      "createdAt": "2026-07-06T09:31:49.710Z",
+      "displayName": "Kreshive Srivastava",
+      "photoURL": "https://lh3.googleusercontent.com/a/ACg8ocJTKZmC59LN5ywchotfVI_JS-WS-7-ea6jS2fVvYr2mR7-qi6PO=s96-c",
+      "id": "d0iA8lci9nPFTxumlSx9aHMrZuz1",
+      "email": "kreshive1509@gmail.com"
+    },
+    "0SZmFGMMV4NdSDrMsdQQpbFxsiu2": {
+      "emailVerified": false,
+      "plan": "pro_monthly",
+      "planStatus": "active",
+      "subscriptionId": null,
+      "renewalDate": "2026-08-05T18:04:23.554Z",
+      "billingStatus": "paid",
+      "role": "super_admin",
+      "createdAt": "2026-07-06T18:03:25.759Z",
+      "displayName": "veltorait",
+      "photoURL": "",
+      "id": "0SZmFGMMV4NdSDrMsdQQpbFxsiu2",
+      "email": "veltoraitsolution2026@gmail.com"
+    },
+    "SGR4ZhMQTWXZRNw9ILnGF8PUnrc2": {
+      "emailVerified": false,
+      "plan": "free",
+      "planStatus": "active",
+      "subscriptionId": null,
+      "renewalDate": null,
+      "billingStatus": "unpaid",
+      "role": "user",
+      "createdAt": "2026-07-07T06:44:32.078Z",
+      "displayName": "User",
+      "photoURL": "https://api.dicebear.com/7.x/initials/svg?seed=User",
+      "id": "SGR4ZhMQTWXZRNw9ILnGF8PUnrc2",
+      "email": "kreshive1509@gmail.com"
+    }
+  },
+  "workspaces": {
+    "ws-1783330309827": {
+      "id": "ws-1783330309827",
+      "name": "Kreshive Srivastava's Workspace",
+      "avatar": "K",
+      "ownerId": "d0iA8lci9nPFTxumlSx9aHMrZuz1",
+      "memberUserIds": [
+        "d0iA8lci9nPFTxumlSx9aHMrZuz1"
+      ],
+      "members": [
+        {
+          "userId": "d0iA8lci9nPFTxumlSx9aHMrZuz1",
+          "email": "kreshive1509@gmail.com",
+          "role": "owner"
+        }
+      ]
+    },
+    "ws-1783331450897": {
+      "id": "ws-1783331450897",
+      "name": "veltorait's Workspace",
+      "avatar": "V",
+      "ownerId": "0SZmFGMMV4NdSDrMsdQQpbFxsiu2",
+      "memberUserIds": [
+        "0SZmFGMMV4NdSDrMsdQQpbFxsiu2"
+      ],
+      "members": [
+        {
+          "userId": "0SZmFGMMV4NdSDrMsdQQpbFxsiu2",
+          "email": "veltoraitsolution2026@gmail.com",
+          "role": "owner"
+        }
+      ]
+    },
+    "ws-1783361005841": {
+      "id": "ws-1783361005841",
+      "name": "veltorait's Workspace",
+      "avatar": "V",
+      "ownerId": "0SZmFGMMV4NdSDrMsdQQpbFxsiu2",
+      "memberUserIds": [
+        "0SZmFGMMV4NdSDrMsdQQpbFxsiu2"
+      ],
+      "members": [
+        {
+          "userId": "0SZmFGMMV4NdSDrMsdQQpbFxsiu2",
+          "email": "veltoraitsolution2026@gmail.com",
+          "role": "owner"
+        }
+      ]
+    },
+    "ws-1783406672146": {
+      "id": "ws-1783406672146",
+      "name": "User's Workspace",
+      "avatar": "U",
+      "ownerId": "SGR4ZhMQTWXZRNw9ILnGF8PUnrc2",
+      "memberUserIds": [
+        "SGR4ZhMQTWXZRNw9ILnGF8PUnrc2"
+      ],
+      "members": [
+        {
+          "userId": "SGR4ZhMQTWXZRNw9ILnGF8PUnrc2",
+          "email": "kreshive1509@gmail.com",
+          "role": "owner"
+        }
+      ]
+    }
+  },
+  "folders": {},
+  "documents": {
+    "doc-1783409447898": {
+      "content": "**dsfsfsdfeaewc[Link description](https://veltora.com)1. \n**> Blockquote- ```javascript\nconsole.log('CollabDocs');\n```## Heading 2# Heading 1*italic text***bold text**dscdcfeadse",
+      "workspaceId": "ws-1783406672146",
+      "folderId": null,
+      "ownerId": "SGR4ZhMQTWXZRNw9ILnGF8PUnrc2",
+      "collaborators": [
+        "kreshive1509@gmail.com"
+      ],
+      "id": "doc-1783409447898",
+      "isStarred": false,
+      "isArchived": false,
+      "createdAt": "2026-07-07T07:30:47.898Z",
+      "updatedAt": "2026-07-07T07:31:32.831Z"
+    }
+  },
+  "comments": {},
+  "notifications": {
+    "notif-1783361033740": {
+      "id": "notif-1783361033740",
+      "userId": "0SZmFGMMV4NdSDrMsdQQpbFxsiu2",
+      "title": "Account Support Override",
+      "description": "A system administrator has manually updated your billing parameters to: PRO_MONTHLY",
+      "isRead": false,
+      "createdAt": "2026-07-06T18:03:53.740Z"
+    },
+    "notif-1783361063950": {
+      "id": "notif-1783361063950",
+      "userId": "0SZmFGMMV4NdSDrMsdQQpbFxsiu2",
+      "title": "Account Support Override",
+      "description": "A system administrator has manually updated your billing parameters to: PRO_MONTHLY",
+      "isRead": false,
+      "createdAt": "2026-07-06T18:04:23.950Z"
+    }
+  },
+  "activities": {
+    "act-1783331896858": {
+      "docId": "none",
+      "workspaceId": "ws-1783330309827",
+      "userId": "d0iA8lci9nPFTxumlSx9aHMrZuz1",
+      "userName": "Kreshive Srivastava",
+      "type": "edited",
+      "details": "[AUDIT] [WHITEBOARD_SAVE] Saved 4 elements to workspace canvas.",
+      "id": "act-1783331896858",
+      "createdAt": "2026-07-06T09:58:16.858Z"
+    },
+    "act-1783331917116": {
+      "docId": "none",
+      "workspaceId": "ws-1783330309827",
+      "userId": "d0iA8lci9nPFTxumlSx9aHMrZuz1",
+      "userName": "Kreshive Srivastava",
+      "type": "edited",
+      "details": "[AUDIT] [WHITEBOARD_SAVE] Saved 5 elements to workspace canvas.",
+      "id": "act-1783331917116",
+      "createdAt": "2026-07-06T09:58:37.116Z"
+    },
+    "act-1783331923123": {
+      "docId": "none",
+      "workspaceId": "ws-1783330309827",
+      "userId": "d0iA8lci9nPFTxumlSx9aHMrZuz1",
+      "userName": "Kreshive Srivastava",
+      "type": "edited",
+      "details": "[AUDIT] [WHITEBOARD_SAVE] Saved 4 elements to workspace canvas.",
+      "id": "act-1783331923123",
+      "createdAt": "2026-07-06T09:58:43.123Z"
+    },
+    "act-1783331923129": {
+      "docId": "none",
+      "workspaceId": "ws-1783330309827",
+      "userId": "d0iA8lci9nPFTxumlSx9aHMrZuz1",
+      "userName": "Kreshive Srivastava",
+      "type": "edited",
+      "details": "[AUDIT] [WHITEBOARD_SAVE] Saved 4 elements to workspace canvas.",
+      "id": "act-1783331923129",
+      "createdAt": "2026-07-06T09:58:43.129Z"
+    },
+    "act-1783332298375": {
+      "docId": "none",
+      "workspaceId": "ws-1783330309827",
+      "userId": "d0iA8lci9nPFTxumlSx9aHMrZuz1",
+      "userName": "Kreshive Srivastava",
+      "type": "edited",
+      "details": "[AUDIT] [WHITEBOARD_SAVE] Saved 5 elements to workspace canvas.",
+      "id": "act-1783332298375",
+      "createdAt": "2026-07-06T10:04:58.375Z"
+    },
+    "act-1783332301919": {
+      "docId": "none",
+      "workspaceId": "ws-1783330309827",
+      "userId": "d0iA8lci9nPFTxumlSx9aHMrZuz1",
+      "userName": "Kreshive Srivastava",
+      "type": "edited",
+      "details": "[AUDIT] [WHITEBOARD_SAVE] Saved 4 elements to workspace canvas.",
+      "id": "act-1783332301919",
+      "createdAt": "2026-07-06T10:05:01.919Z"
+    },
+    "act-1783332301956": {
+      "docId": "none",
+      "workspaceId": "ws-1783330309827",
+      "userId": "d0iA8lci9nPFTxumlSx9aHMrZuz1",
+      "userName": "Kreshive Srivastava",
+      "type": "edited",
+      "details": "[AUDIT] [WHITEBOARD_SAVE] Saved 4 elements to workspace canvas.",
+      "id": "act-1783332301956",
+      "createdAt": "2026-07-06T10:05:01.956Z"
+    },
+    "act-1783406445543": {
+      "docId": "none",
+      "workspaceId": "none",
+      "userId": "0SZmFGMMV4NdSDrMsdQQpbFxsiu2",
+      "userName": "veltorait",
+      "type": "edited",
+      "details": "[AUDIT] [PLUGIN_TOGGLE] Toggled plugin 'Code Snippets Pro' to ENABLED state.",
+      "id": "act-1783406445543",
+      "createdAt": "2026-07-07T06:40:45.543Z"
+    },
+    "act-1783406448553": {
+      "docId": "none",
+      "workspaceId": "none",
+      "userId": "0SZmFGMMV4NdSDrMsdQQpbFxsiu2",
+      "userName": "veltorait",
+      "type": "edited",
+      "details": "[AUDIT] [PLUGIN_TOGGLE] Toggled plugin 'Code Snippets Pro' to DISABLED state.",
+      "id": "act-1783406448553",
+      "createdAt": "2026-07-07T06:40:48.553Z"
+    },
+    "act-1783406451530": {
+      "docId": "none",
+      "workspaceId": "none",
+      "userId": "0SZmFGMMV4NdSDrMsdQQpbFxsiu2",
+      "userName": "veltorait",
+      "type": "edited",
+      "details": "[AUDIT] [PLUGIN_TOGGLE] Toggled plugin 'Code Snippets Pro' to ENABLED state.",
+      "id": "act-1783406451530",
+      "createdAt": "2026-07-07T06:40:51.531Z"
+    },
+    "act-1783407076695": {
+      "docId": "none",
+      "workspaceId": "none",
+      "userId": "SGR4ZhMQTWXZRNw9ILnGF8PUnrc2",
+      "userName": "User",
+      "type": "edited",
+      "details": "[AUDIT] [PLUGIN_TOGGLE] Toggled plugin 'LaTeX Math Renderer' to ENABLED state.",
+      "id": "act-1783407076695",
+      "createdAt": "2026-07-07T06:51:16.695Z"
+    },
+    "act-1783409448288": {
+      "docId": "doc-1783409447898",
+      "workspaceId": "ws-1783406672146",
+      "userId": "SGR4ZhMQTWXZRNw9ILnGF8PUnrc2",
+      "userName": "User",
+      "type": "created",
+      "details": "User created a new draft \"Untitled Documentation Draft\".",
+      "id": "act-1783409448288",
+      "createdAt": "2026-07-07T07:30:48.288Z"
+    }
+  },
+  "subscriptions": {},
+  "payments": {},
+  "invoices": {},
+  "transactions": {}
+}
