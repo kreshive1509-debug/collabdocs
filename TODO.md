@@ -1,5 +1,6 @@
 - [ ] Edit package.json: move cross-env and esbuild from devDependencies to dependencies
-- [ ] Run npm install locally to regenerate package-lock.json
+- [x] Run npm install locally to regenerate package-lock.json
+
 - [ ] Verify lockfile contains required transitive dependency(s) (gcp-metadata)
 - [x] Commit updated package.json + package-lock.json
 
